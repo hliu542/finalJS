@@ -1,0 +1,108 @@
+/* Intialize styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #b30000; /* Dark red for high contrast */
+    padding: 10px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main Section */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Titles */
+h1, h2 {
+    color: #b30000; /* Dark red for headings */
+    margin-bottom: 10px;
+}
+
+/* To-Do List */
+#task-list {
+    list-style-type: none;
+}
+
+#task-list li {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #ffe6e6; /* Light red background for tasks */
+    display: flex;
+    justify-content: space-between;
+}
+
+#task-list li .edit, .delete {
+    color: #b30000; /* Dark red for action links */
+    cursor: pointer;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    padding: 10px;
+    background-color: #d9534f; /* Accessible red for buttons */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #c9302c; /* Slightly darker red on hover */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #b30000; /* Dark red */
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    main {
+        padding: 10px;
+    }
+}

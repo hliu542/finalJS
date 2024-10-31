@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Manager</title>
+    <link rel="stylesheet" href="js_part2.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#add-task">Add New Task</a></li>
+                <li><a href="#settings">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <!-- To-Do List -->
+        <section id="home">
+            <h1>To-Do List</h1>
+            <ul id="task-list">
+                <!-- Placeholder tasks -->
+                <li>Task 1 <span class="edit">Edit</span> | <span class="delete">Delete</span></li>
+                <li>Task 2 <span class="edit">Edit</span> | <span class="delete">Delete</span></li>
+            </ul>
+        </section>
+
+        <!-- Adding New Tasks -->
+        <section id="add-task">
+            <h2>Add New Task</h2>
+            <form>
+                <input type="text" placeholder="Task Name" required>
+                <input type="text" placeholder="Task Description">
+                <button type="submit">Add Task</button>
+            </form>
+        </section>
+
+        <!-- Settings Section -->
+        <section id="settings">
+            <h2>Settings</h2>
+            <p>Placeholder for settings (Change theme, Sort tasks)</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>2024 To-Do List Manager</p>
+    </footer>
+</body>
+</html>
